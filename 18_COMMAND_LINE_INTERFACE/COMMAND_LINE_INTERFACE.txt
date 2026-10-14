@@ -1,0 +1,31 @@
+ Command Line Interface — ENDF_PARSERPY
+
+Upstream: https://github.com/IAEA-NDS/endf-parserpy
+
+ Anticloud CLI
+
+bash
+ Install
+pip install anticloud-endf-parserpy
+
+ Run offline with PAX inference
+anticloud-endf-parserpy --offline --pax-local
+
+ Run with AIOSS logging
+anticloud-endf-parserpy --aioss-log ./ledger.jsonl
+
+ Single binary (after build)
+./endf_parserpy --config config.yaml
+
+
+ Options
+
+| Flag | Description |
+| --- | --- |
+| --offline | Disable all network calls |
+| --pax-local | Use local PAX inference at 127.0.0.1:11434 |
+| --aioss-log PATH | Write AIOSS audit chain to PATH |
+| --encrypt | Enable AES-256 at rest for output files |
+| --gpu | Force GPU inference |
+| --cpu | Force CPU inference |
+| --config PATH | Load configuration from YAML file |

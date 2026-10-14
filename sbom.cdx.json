@@ -1,0 +1,67 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:583126d7-360b-5b11-8b26-dd9eb2d56006",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:04:40Z",
+    "component": {
+      "type": "application",
+      "name": "ENDF_PARSERPY",
+      "version": "e03429bf0b11",
+      "bom-ref": "pkg:generic/anticloud/ENDF_PARSERPY@e03429bf0b11",
+      "purl": "pkg:generic/anticloud/ENDF_PARSERPY@e03429bf0b11",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "e03429bf0b1163aa685e0d9b1c6d2cfbe9f6a622"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/IAEA-NDS/endf-parserpy"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "-std",
+      "version": "=c++11",
+      "purl": "pkg:pypi/-std@c++11",
+      "bom-ref": "pypi/-std@=c++11"
+    },
+    {
+      "type": "library",
+      "name": "lark",
+      "version": ">=1.0.0",
+      "purl": "pkg:pypi/lark@1.0.0",
+      "bom-ref": "pypi/lark@>=1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "platformdirs",
+      "version": ">=4.3.6",
+      "purl": "pkg:pypi/platformdirs@4.3.6",
+      "bom-ref": "pypi/platformdirs@>=4.3.6"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.20",
+      "purl": "pkg:pypi/numpy@1.20",
+      "bom-ref": "pypi/numpy@>=1.20"
+    }
+  ]
+}
